@@ -9,7 +9,7 @@ docker-compose up --build
 ## Querying the data
 >There are 2 different methods currently available for query: Finding the position of a satellite and finding a satellite closest to a given set of latitude, longitude coordinates. With both, you may specify a time when querying via the API
 
-The examples we will use here are ID = 5eed7716096e590006985803, date = 2021-13-18 16:54 for the satellite position and position = (-51,44), date = 2021-13-18 16:54 for closest satellite.
+The examples we will use here are ID = 5eed7716096e590006985803, date = 2021-13-18 16:54 for the satellite position and position = (-51,44), date = 2021-13-18 16:54 for closest satellite. You will need the % in the curl query for whitespace
 
 Using curl:
 
@@ -30,4 +30,10 @@ http://localhost:3333/position/(-51,44)
 http://localhost:3333/position/(-51,44)/2021-13-18%16:54
 ```
 
+Your return will have the following format:
+
+
+```json 
+{"ID": "satellite_id", "POSITION": {"LAT": "latitude", "LON": "longitude}}
+```
 
