@@ -34,6 +34,6 @@ Your return will have the following format:
 
 
 ```json 
-{"ID": "satellite_id", "POSITION": {"LAT": "latitude", "LON": "longitude}}
+{"ID": "satellite_id", "POSITION": {"LAT": "latitude", "LON": "longitude"}}
 ```
 
