@@ -7,6 +7,7 @@
 docker-compose up --build
 ```
 ## Querying the data
+>There are 2 different methods currently available for query: Finding the position of a satellite and finding a satellite closest to a given set of latitude, longitude coordinates
 ```
 curl -X GET "localhost:3333/satellite/5eed7716096e590006985803/2021-13-18%16:54"
 
