@@ -109,7 +109,7 @@ def get_closest_sat(location, dt=str(datetime.now())):
         df['haversine'] = df.apply(lambda x: haversine(
             location, (x['latitude'], x['longitude'])), axis=1)
         df = df[df['haversine'] == min(df['haversine'])]
-        return({"ID": df.values[0][3]})
+        return({"ID": df.values[0][3], "POSITION": {"LAT": df.values[0][2], "LON": df.values[0][1]}})
     else:
         return("No satellites found\n")
 
