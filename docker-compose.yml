@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  db:
+    build: ./database/
+    ports:
+      - "127.0.0.1:15432:5432"
+  app :
+    build: ./app/
+    depends_on:
+      - "db"
+    ports:
+      - "127.0.0.1:3333:3333"
