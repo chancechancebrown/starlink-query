@@ -37,3 +37,7 @@ Your return will have the following format:
 {"ID": "satellite_id", "POSITION": {"LAT": "latitude", "LON": "longitude"}}
 ```
 
+## Future Work
+
+Implement better date handling and logging
+
